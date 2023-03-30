@@ -76,8 +76,8 @@ const CreatePost = () => {
           <FormField 
             LabelName="Prompt"
             type="text"
-            name="an astronaut lounging in a tropical resort in space, vaporwave"
-            placeholder="Irfan Khan"
+            name="prompt"
+            placeholder="an astronaut lounging in a tropical resort in space, vaporwave"
             value={form.prompt}
             handleChange={handleChange}
             isSurpriseMe
