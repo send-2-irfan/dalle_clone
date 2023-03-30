@@ -13,8 +13,8 @@ app.use(cors());
 app.use(express.json({ limit: '50mb'}));
 
 
-app.use('/api/v2/postRoutes', postRoutes);
-app.use('/api/v2/dalleRoutes', dalleRoutes);
+app.use('/api/v2/post', postRoutes);
+app.use('/api/v2/dalle', dalleRoutes);
 
 app.get('/', async (req, res) => {
     res.send("Hello from DALL-E");
