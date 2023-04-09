@@ -28,7 +28,7 @@ const Home = () => {
         });
         if (response.ok) {
           const result = response.json();
-
+          // to show the newest post on the top
           setAllPosts(result.data.reverse());
         }
       } catch (error) {
