@@ -26,6 +26,11 @@ const Home = () => {
             "Content-Type": "application/json",
           },
         });
+        if (response.ok) {
+          const result = response.json();
+
+          setAllPosts(result.data.reverse());
+        }
       } catch (error) {
       } finally {
         setLoading(false);
