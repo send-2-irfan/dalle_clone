@@ -32,6 +32,7 @@ const Home = () => {
           setAllPosts(result.data.reverse());
         }
       } catch (error) {
+        alert(error);
       } finally {
         setLoading(false);
       }
@@ -70,7 +71,7 @@ const Home = () => {
               {searchText ? (
                 <RenderCards data={[]} title="No Search Results found" />
               ) : (
-                <RenderCards data={[]} title="No Posts found" />
+                <RenderCards data={allPosts} title="No Posts found" />
               )}
             </div>
           </>
