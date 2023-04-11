@@ -30,7 +30,7 @@ const CreatePost = () => {
           body: JSON.stringify(form),
         });
         // const data = await response.json();
-        // console.log(data);
+
         await response.json();
         navigate("/");
       } catch (error) {
